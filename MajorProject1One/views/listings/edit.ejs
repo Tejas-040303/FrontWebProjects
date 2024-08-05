@@ -1,0 +1,52 @@
+<% layout('layouts/boilerplate') %>
+    <div class="row">
+        <div class="col-8 offset-2 mt-3">
+            <h3 >Update a New Listing</h3>
+            <form action="/listings/<%= editListing._id %>/?_method=PUT" method="post" novalidate class="needs-validation">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" name="listing[title]" value="<%= editListing.title %>" class="form-control" required>
+                    <div class="invalid-feedback">Title required</div>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="listing[description]" cols="30" rows="5"
+                        class="form-control" required><%= editListing.description %></textarea>
+                        <div class="invalid-feedback">Please provide a short description.</div>
+                </div>
+                <div class="row">
+                <div class="mb- col-md-4">
+                    <label for="image" class="form-label">Image Name</label>
+                    <input type="text" name="listing[image][filename]" value="<%= editListing.image.filename %>"
+                        class="form-control">
+                </div>
+                <div class="mb-3 col-md-8">
+                    <label for="image" class="form-label">Image URL</label>
+                    <input type="text" name="listing[image][url]" value="<%= editListing.image.url %>"
+                        class="form-control" required>
+                        <div class="invalid-feedback">Please provide Image URL</div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="number" name="listing[price]" value="<%= editListing.price %>"
+                            class="form-control" required>
+                            <div class="invalid-feedback">Please enter Price</div>
+                    </div> 
+                    <div class="mb-3 col-md-8">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" name="listing[country]" value="<%= editListing.country %>" class="form-control" required>
+                        <div class="invalid-feedback">Please provide Country name</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" name="listing[location]" value="<%= editListing.location %>"
+                        class="form-control" required>
+                        <div class="invalid-feedback">Please provide Location</div>
+                </div>
+                <button class="btn btn-dark add-btn mb-4">Edit</button>
+            </form>
+        </div>
+    </div>

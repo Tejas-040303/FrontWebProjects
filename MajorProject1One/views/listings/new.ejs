@@ -1,0 +1,57 @@
+<% layout('layouts/boilerplate') %>
+
+
+    <div class="row mt-3">
+        <div class="col-8 offset-2">
+            <h3>Create a New Listing</h3>
+
+            <form action="/listings" method="post" novalidate class="needs-validation">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" name="listing[title]" placeholder="enter title" class="form-control" required>
+                    <div class="invalid-feedback">Title required</div>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="listing[description]" placeholder="enter description" cols="30" rows="5"
+                        class="form-control" required></textarea>
+                        <div class="invalid-feedback">Please provide a short description.</div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="image" class="form-label">Image Name</label>
+                        <input type="text" name="listing[image][filename]" placeholder="enter image name"
+                            class="form-control">
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="image" class="form-label">Image URL</label>
+                        <input type="text" name="listing[image][url]" placeholder="enter image URL"
+                            class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="price" class="form-label">Price</label>
+                        <input name="listing[price]" placeholder="enter price" class="form-control"
+                            required>
+                            <div class="invalid-feedback">Please enter Price</div>
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" name="listing[country]" placeholder="enter country" class="form-control"
+                            required>
+                            <div class="invalid-feedback">Please provide Country name</div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" name="listing[location]" placeholder="enter location" class="form-control"
+                        required>
+                        <div class="invalid-feedback">Please provide Location</div>
+                </div>
+
+                <button class="btn btn-dark add-btn mb-3">Add</button>
+            </form>
+        </div>
+    </div>
