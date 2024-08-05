@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+
+.color-container{
+    margin: auto;
+    width: 600px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+.color-container p{
+    text-align: center;
+}
