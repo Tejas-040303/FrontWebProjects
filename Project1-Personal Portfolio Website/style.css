@@ -1,0 +1,209 @@
+
+
+
+#header{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    background-color: #3b3535;
+}
+
+#name{
+    text-transform: uppercase;
+    font-size: xx-large;
+    color: beige;
+    margin-left: 40px;
+    height: 16vh;
+}
+
+#nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: x-large;
+}
+
+#nav a{
+    color: beige;
+    text-decoration: none;
+}
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: #3b3535;
+}
+
+#portfolio h2{
+    margin-left: 12.5%;
+    font-size: xx-large;
+    color: beige;
+}
+
+#me{
+    width: 85%;
+    display: block;
+    margin-left: 7.5%;
+}
+
+#me h3 span{
+    margin-left: 5%;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: #3b3535;
+}
+
+#shortMe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #3b3535;
+}
+
+#shortMe div h3{
+    font-size: 1.5em;
+}
+
+#shortMe div p{
+    font-size: 1.5em;
+}
+
+#shortMe div > img{
+    width: 250px;
+    height: 250px;
+}
+
+#detailedMe{
+    margin-left: 10%;
+    width: 80%;
+    text-align: justify;
+}
+
+#detailedMe{
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+.containerOne{
+    color: beige;
+    background-color: #3b3535;
+    margin: 25px;
+    padding: 25px;
+}
+
+.containerTwo{
+    color: #3b3535;
+    background-color: beige;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+}
+
+#skills h3 span{
+    margin-left: 15%;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+
+.skills-table {
+    width: 60%;
+    margin-left: 20%;
+    border-collapse: collapse;
+}
+
+.skills-table th, .skills-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.skills-table th {
+    background-color: #f2f2f2;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+}
+
+#projects h3 span {
+    margin-left: 18%;
+    font-size: x-large;
+    text-transform: uppercase;    
+}
+
+#projects ul{
+    font-size: larger;
+    line-height: 1.5;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+#projects ul li{
+    margin-left: 40%;
+    width: 15%;
+    height: 100%;
+    font-size: larger;
+}
+
+#projects a{
+    font-size: 48px;
+    color: #3b3535;
+    background-color: beige;
+    border: none;
+}
+
+#education{
+    height: 50vh;
+}
+
+#education h3 span{
+    margin-left: 15%;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.education-table {
+    margin: 50px;
+    margin-left: 17.5%;
+    width: 75%;
+    border-collapse: collapse;
+}
+
+.education-table th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    height: 5vh;
+    text-align: left;
+    background-color: beige;
+    color: #3b3535;
+}
+
+.education-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    height: 5vh;
+    text-align: left;
+}
+
+#Contact h2 span{
+    color: #3b3535;
+    margin-left: 17%;
+    text-transform: uppercase;
+}
+
+#Contact h5{
+    color: #3b3535;
+    margin-left: 35%;
+}
+
+#Contact h5 i{
+    font-size: 20px;
+}
