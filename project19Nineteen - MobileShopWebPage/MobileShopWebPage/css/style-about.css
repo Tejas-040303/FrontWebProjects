@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300&display=swap");
+
+* {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+}
+
+body {
+  background-color: #6617cb;
+  background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+  color: snow;
+}
+
+.section-container {
+  width: 100%;
+  height: 50px;
+  margin-top: 2%;
+}
+
+.overlay-header {
+  display: flex;
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  text-align: center;
+}
+
+.list-item ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  list-style: none;
+}
+
+.list-item a {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.list-item a:hover {
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+}
+
+.contact{
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.contact:hover{
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.about-bg-img {
+  width: 100%;
+  height: fit-content;
+}
+
+.about-bg-img img {
+  width: 100%;
+  aspect-ratio: 21/9;
+}
+
+.about-heading h1 {
+  margin-top: 4%;
+  margin-bottom: 3%;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.about-heading h2 {
+  text-align: center;
+  font-size: larger;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-img {
+  margin-left: 5%;
+  width: 40%;
+  height: 400px;
+}
+
+.about-img img {
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;
+  margin-left: 5%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+  width: 45%;
+}
+
+.text-container p {
+  margin-top: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.text-container button {
+  border: none;
+  border-radius: 25px;
+  width: 25%;
+  height: 10%;
+  background: #e75d00;
+}
+
+.text-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-row {
+  width: 100%;
+  margin-left: 0.1px !important;
+}
+
+.form-container {
+  margin-left: 10%;
+  width: 350px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container h2,
+.form-container p {
+  text-align: center;
+}
+
+form {
+  margin-left: 5%;
+}
+
+.form-input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: none;
+}
+
+#user-name,
+#user-email,
+#user-subject,
+#user-message {
+  width: 100%;
+  border: 1px solid snow;
+  color: #fff;
+}
+
+.form-button {
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 45px;
+}
+
+.footer-about-container {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-about-container h5,
+.footer-about-container a {
+  text-align: center;
+}
+
+.contact-container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.flex-column li u {
+  color: snow;
+}
